@@ -12,7 +12,6 @@ const ripples = [].map.call(document.querySelectorAll(selector), function (el) {
 });
 
 const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
-drawer.open = true;
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
 const topAppBar = new MDCTopAppBar(topAppBarElement);
 topAppBar.setScrollTarget(document.getElementById('main-content'));
