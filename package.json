@@ -8,6 +8,11 @@
     "build": "parcel build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "targets": {
+    "default": {
+      "distDir": "docs"
+    }
+  },
   "author": "Emerson Estrella",
   "license": "ISC",
   "dependencies": {
