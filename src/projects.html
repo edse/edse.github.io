@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="index.scss" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <title>Emerson Estrella</title>
+</head>
+
+<body class="mdc-typography">
+
+    <!-- Menu -->
+    <include src="src/partials/menu.html">
+        {
+        "selectedHome": "",
+        "selectedAbout": "",
+        "selectedSkills": "",
+        "selectedWork": "",
+        "selectedProjects": " mdc-deprecated-list-item--activated",
+        "selectedMusic": "",
+        "selectedPhotos": "",
+        "selectedResume": "",
+        "selectedContact": ""
+        }
+    </include>
+
+    <div class="mdc-drawer-app-content">
+
+        <!-- Header -->
+        <include src="src/partials/header.html">
+            {
+            "title": "Some experiments just for learning purposes"
+            }
+        </include>
+
+        <main class="main-content" id="main-content">
+            <div class="mdc-top-app-bar--fixed-adjust"></div>
+            <!-- Content -->
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <a href="https://slotthereum.github.io" target="_blank" class="mdc-card__primary-action">
+                                <div class="mdc-card__media mdc-card__media--16-9"
+                                    style="background-image: url(assets/images/slotthereum.png);"></div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="card__title">Slotthereum</div>
+                                    <include src="src/partials/chip.html">{"title": "web3"}</include>
+                                </div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="demo-card__supporting-text">An open source Ethereum based slot machine.
+                                    </div>
+                                </div>
+                                <div class="mdc-card__actions">
+                                    <!-- <a href="https://slotthereum.github.io" target="_blank"
+                                        class="mdc-button mdc-button--leading">
+                                        <span class="mdc-button__ripple"></span>
+                                        <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                        <span class="mdc-button__label">Slotthereum</span>
+                                    </a> -->
+                                </div>
+                                <div class="mdc-card__ripple"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <a href="https://html5physics.herokuapp.com/editor" target="_blank" class="mdc-card__primary-action">
+                                <div class="mdc-card__media mdc-card__media--16-9"
+                                    style="background-image: url(assets/images/physicsengine.png);"></div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="card__title">Physics engine & level Editor</div>
+                                    <include src="src/partials/chip.html">{"title": "utility"}</include>
+                                </div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="demo-card__supporting-text">2D physics editor that allows you to create,
+                                        edit, and interact with 2D bodies in real time.</div>
+                                </div>
+                                <div class="mdc-card__actions">
+                                    <!-- <a href="https://html5physics.herokuapp.com/editor" target="_blank"
+                                        class="mdc-button mdc-button--leading">
+                                        <span class="mdc-button__ripple"></span>
+                                        <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                        <span class="mdc-button__label">Physics engine</span>
+                                    </a> -->
+                                </div>
+                                <div class="mdc-card__ripple"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <a href="https://shapepuzzle.appspot.com" target="_blank" class="mdc-card__primary-action">
+                                <div class="mdc-card__media mdc-card__media--16-9"
+                                style="background-image: url(assets/images/shapepuzzle.png);"></div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="card__title">HTML5 Shape Puzzle</div>
+                                    <include src="src/partials/chip.html">{"title": "game"}</include>
+                                </div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="demo-card__supporting-text">HTML5 Version of the game the preschool kids
+                                        love!</div>
+                                </div>
+                                <div class="mdc-card__actions">
+                                    <!-- <a href="https://shapepuzzle.appspot.com" target="_blank"
+                                        class="mdc-button mdc-button--leading">
+                                        <span class="mdc-button__ripple"></span>
+                                        <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                        <span class="mdc-button__label">shapepuzzle</span>
+                                    </a> -->
+                                </div>
+                                <div class="mdc-card__ripple"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <a href="https://html5videopuzzle.appspot.com" target="_blank" class="mdc-card__primary-action">
+                                <div class="mdc-card__media mdc-card__media--16-9"
+                                    style="background-image: url(assets/images/videopuzzle.png);"></div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="card__title">HTML5 Video Puzzle</div>
+                                    <include src="src/partials/chip.html">{"title": "game"}</include>
+                                </div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="demo-card__supporting-text">Just having fun with video, canvas, and
+                                        requestAnimationFrame.</div>
+                                </div>
+                                <div class="mdc-card__actions">
+                                    <!-- <a href="https://html5videopuzzle.appspot.com" target="_blank"
+                                        class="mdc-button mdc-button--leading">
+                                        <span class="mdc-button__ripple"></span>
+                                        <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                        <span class="mdc-button__label">HTML5 Video Puzzle</span>
+                                    </a> -->
+                                </div>
+                                <div class="mdc-card__ripple"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <a href="https://html5snapshot.appspot.com" target="_blank" class="mdc-card__primary-action">
+                                <div class="mdc-card__media mdc-card__media--16-9"
+                                    style="background-image: url(assets/images/snapshot.png);"></div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="card__title">Snap Shot!</div>
+                                    <include src="src/partials/chip.html">{"title": "utility"}</include>
+                                </div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="demo-card__supporting-text">Create a simple HTML and take a picture of it!
+                                    </div>
+                                </div>
+                                <div class="mdc-card__actions">
+                                    <!-- <a href="https://html5snapshot.appspot.com" target="_blank"
+                                        class="mdc-button mdc-button--leading">
+                                        <span class="mdc-button__ripple"></span>
+                                        <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                        <span class="mdc-button__label">Snap Shot!</span>
+                                    </a> -->
+                                </div>
+                                <div class="mdc-card__ripple"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script defer src="index.js" type="module"></script>
+</body>

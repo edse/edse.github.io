@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="index.scss" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <title>Emerson Estrella</title>
+</head>
+
+<body class="mdc-typography">
+
+    <!-- Menu -->
+    <include src="src/partials/menu.html">
+        {
+        "selectedHome": "",
+        "selectedAbout": "",
+        "selectedSkills": "",
+        "selectedWork": "",
+        "selectedProjects": "",
+        "selectedPhotos": "",
+        "selectedMusic": "",
+        "selectedResume": "",
+        "selectedContact": " mdc-deprecated-list-item--activated"
+        }
+    </include>
+
+    <div class="mdc-drawer-app-content">
+
+        <!-- Header -->
+        <include src="src/partials/header.html">
+            {
+            "title": "Getting in touch"
+            }
+        </include>
+
+        <main class="contact" id="main-content">
+            <div class="mdc-top-app-bar--fixed-adjust"></div>
+
+            <!-- Content -->
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-6">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSekTsol0h9xPobTOEXpdB1vAzgHl9UpCQHkCCqduI-SRLf1zQ/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <a href="https://twitter.com/emersonestrella" target="_blank" class="mdc-card__primary-action">
+                                <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(assets/images/twitter2.png);"></div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="card__title">@emersonestrella</div>
+                                    <div class="card__subhead">twitter.com/emersonestrella</div>
+                                </div>
+                                <div class="mdc-card__actions">
+                                    <!-- <button class="mdc-button mdc-card__action mdc-card__action--button">
+                                        <div class="mdc-button__ripple"></div>
+                                        <span class="mdc-button__label">Action 1</span>
+                                    </button> -->
+                                </div>
+                                <div class="mdc-card__ripple"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <a href="https://linkedin.com/in/emersonestrella" target="_blank" class="mdc-card__primary-action">
+                                <div class="mdc-card__media mdc-card__media--16-9"
+                                    style="background-image: url(assets/images/linkedin.png);"></div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="card__title">Emerson Estrella</div>
+                                    <div class="card__subhead">linkedin.com/in/emersonestrella</div>
+                                </div>
+                                <div class="mdc-card__actions">
+                                    <!-- <button class="mdc-button mdc-card__action mdc-card__action--button">
+                                        <div class="mdc-button__ripple"></div>
+                                        <span class="mdc-button__label">Action 1</span>
+                                    </button> -->
+                                </div>
+                                <div class="mdc-card__ripple"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <div class="mdc-card__media mdc-card__media--16-9"
+                                style="background-image: url(assets/images/delete-facebook.jpg);"></div>
+                            <div class="mdc-card__ripple"></div>
+                        </div>
+                    </div> -->
+                </div>
+        </main>
+    </div>
+    <script defer src="index.js" type="module"></script>
+</body>

@@ -1,0 +1,164 @@
+@use '../node_modules/@material/theme' with (
+  $primary: #3f51b5,
+  $secondary: #ffab91,
+  $on-primary: #ffffff,
+  $on-secondary: #000000,
+);
+
+@use "../node_modules/@material/layout-grid/mdc-layout-grid";
+@use '../node_modules/@material/button/mdc-button';
+@use '../node_modules/@material/button';
+@use "../node_modules/@material/icon-button";
+@use "../node_modules/@material/top-app-bar/mdc-top-app-bar";
+@use "../node_modules/@material/icon-button/styles";
+@use "../node_modules/@material/drawer";
+@use "../node_modules/@material/list";
+@use "../node_modules/@material/card";
+@use "../node_modules/@material/typography/mdc-typography";
+@use "../node_modules/@material/floating-label/mdc-floating-label";
+@use "../node_modules/@material/line-ripple/mdc-line-ripple";
+@use "../node_modules/@material/notched-outline/mdc-notched-outline";
+@use "../node_modules/@material/textfield";
+@use "../node_modules/@material/dialog";
+@use "../node_modules/@material/chips";
+@use "../node_modules/@material/image-list/mdc-image-list";
+@use "../node_modules/@material/image-list";
+@use "../node_modules/@material/fab";
+
+.my-image-list {
+  @include image-list.standard-columns(5);
+}
+
+.my-masonry-image-list {
+  @include image-list.masonry-columns(5);
+}
+
+@include dialog.core-styles;
+@include textfield.core-styles;
+@include drawer.core-styles;
+@include drawer.dismissible-core-styles;
+@include drawer.modal-core-styles;
+@include list.deprecated-core-styles;
+@include card.core-styles;
+@include fab.core-styles;
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+  }
+
+.content {
+  margin: 25px;
+}
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.main-content {
+  overflow: auto;
+  height: 100%;
+}
+
+.app-bar {
+  position: absolute;
+}
+
+// Only apply this style if below top app bar.
+.mdc-top-app-bar {
+  z-index: 7;
+}
+
+.mdc-card__primary-main-content {
+  padding: 1rem;
+}
+
+.mdc-card__primary-main-content h3 {
+  margin-top: 2em;
+}
+
+.mdc-card__primary-sub-content {
+  padding: 0 1rem 8px;
+}
+
+.card__title {
+  font-family: Roboto, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 500;
+  letter-spacing: .0125em;
+  text-decoration: inherit;
+  text-transform: inherit;
+}
+
+.card__subhead {
+  font-family: Roboto, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  letter-spacing: .0178571429em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  opacity: .6;
+}
+
+.demo-card__supporting-text {
+  font-family: Roboto, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  letter-spacing: .0178571429em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  opacity: .6;
+}
+
+.mdc-card-wrapper__text-section:first-child, .mdc-card__media+.mdc-card-wrapper__text-section {
+  padding-top: 16px;
+}
+
+.mdc-card-wrapper__text-section {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.mdc-card-wrapper__text-section+.mdc-card-wrapper__text-section {
+  padding-top: 18px;
+}
+
+div.mdc-list-divider {
+  padding-top: 16px;
+}
+
+.mdc-evolution-chip-set .mdc-evolution-chip-set__chips {
+  margin-right: 8px;
+}
+
+.about .mdc-card {
+  margin-bottom: 16px;
+}
+
+.contact .mdc-card__media {
+  background-size: contain;
+}
+
+.contact .mdc-card {
+  min-width: fit-content;
+}
+
+.resume .mdc-fab {
+  right: 16px;
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+}

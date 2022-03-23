@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+  <link href="index.scss" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <title>Emerson Estrella</title>
+</head>
+
+<body class="mdc-typography">
+
+  <!-- Menu -->
+  <include src="src/partials/menu.html">
+    {
+      "selectedHome": "",
+      "selectedAbout": " mdc-deprecated-list-item--activated",
+      "selectedSkills": "",
+      "selectedWork": "",
+      "selectedProjects": "",
+      "selectedPhotos": "",
+      "selectedMusic": "",
+      "selectedResume": "",
+      "selectedContact": ""
+    }
+  </include>
+
+  <div class="mdc-drawer-app-content">
+
+    <!-- Header -->
+    <include src="src/partials/header.html">
+      {
+        "title": "A Brazilian, a husband, and a father of two."
+      }    
+    </include>
+
+    <main class="main-content" id="about">
+      <div class="mdc-top-app-bar--fixed-adjust"></div>
+
+      <!-- Content -->
+      <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell--span-8">
+            <div class="mdc-card">
+              <div class="mdc-card-wrapper__text-section">
+                <div class="card__title">About me</div>
+                <!-- <div class="card__subhead">a Brazilian, a husband, and a father of two</div> -->
+              </div>
+              <div class="mdc-card-wrapper__text-section">
+                <div class="demo-card__supporting-text">
+                  <p>I'm a Brazilian, a husband, a father of two, and a passionate software engineer.</p>
+                  <p>I love to create solutions and to learn new technologies.</p>
+                  <p>What keeps me moving is seeing how impactful these solutions can be.</p>
+                </div>
+              </div>
+
+              <div class="mdc-card-wrapper__text-section">
+                <div class="card__title">20+ years of experience</div>
+                <!-- <div class="card__subhead">a Brazilian, a husband, and a father of two</div> -->
+              </div>
+              <div class="mdc-card-wrapper__text-section">
+                <div class="demo-card__supporting-text">
+                  <p>I've been working for companies from different sizes, cultures, and continents.</p>
+                  <p>Disney, Apple, HP, SBS Australia, TV Cultura and others.</p>
+                  <p>I'm currently building and maintaining backend infrastructure for a Dutch telecom company called KPN.</p>
+                </div>
+              </div>
+
+              <div class="mdc-card-wrapper__text-section">
+                <div class="card__title">Education</div>
+                <!-- <div class="card__subhead">a Brazilian, a husband, and a father of two</div> -->
+              </div>
+              <div class="mdc-card-wrapper__text-section">
+                <div class="demo-card__supporting-text">
+                  <p>University of California, Berkeley, Software Engineering for Software as a Service. Coursework including: Test Driven Development & Ruby on Rails</p>                  
+                  <p>Multimedia, Raffles LaSalle Institute (Sydney, Australia). Coursework including: Design principles, the creative media (audio, video and 2D & 3D animation), and multimedia authoring.</p>
+                  <p>Computer Science, PUC University of São Paulo. Coursework includes: C++ and Java programming, Databases, Computer networks, Network security, and Distributed multimedia.</p>
+                </div>
+              </div>
+
+              <!-- <div class="mdc-card__actions"></div> -->
+            </div>
+          </div>
+          <div class="mdc-layout-grid__cell--span-4">
+            <div class="mdc-card demo-card">
+              <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(assets/images/profile.png);"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script defer src="index.js" type="module"></script>
+</body>

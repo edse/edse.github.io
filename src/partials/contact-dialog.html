@@ -1,0 +1,63 @@
+<div class="mdc-dialog">
+    <div class="mdc-dialog__container">
+        <div class="mdc-dialog__surface" role="alertdialog" aria-modal="true" aria-labelledby="my-dialog-title"
+            aria-describedby="my-dialog-content">
+            <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+            <h2 class="mdc-dialog__title">Get in touch</h2>
+            <div class="mdc-dialog__content">
+                <ul class="mdc-list">
+                    <li class="mdc-list-item" tabindex="0">
+                        <div class="mdc-list-item__text">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple"></span>
+                                <span class="mdc-floating-label" id="my-label-id">Name</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                    </li>
+                    <li class="mdc-list-item" tabindex="0">               
+                        <div class="mdc-list-item__text">
+                            <label class="mdc-text-field mdc-text-field--filled">
+                                <span class="mdc-text-field__ripple"></span>
+                                <span class="mdc-floating-label" id="my-label-id">Email</span>
+                                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                                <span class="mdc-line-ripple"></span>
+                            </label>
+                        </div>
+                    </li>
+                    <li class="mdc-list-item" tabindex="0">               
+                        <div class="mdc-list-item__text">
+                            <label
+                                class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--with-internal-counter">
+                                <span class="mdc-notched-outline">
+                                    <span class="mdc-notched-outline__leading"></span>
+                                    <span class="mdc-notched-outline__notch">
+                                        <span class="mdc-floating-label" id="my-label-id">Message</span>
+                                    </span>
+                                    <span class="mdc-notched-outline__trailing"></span>
+                                </span>
+                                <span class="mdc-text-field__resizer">
+                                    <textarea class="mdc-text-field__input" aria-labelledby="my-label-id" rows="8" cols="40"
+                                        maxlength="140"></textarea>
+                                    <span class="mdc-text-field-character-counter">0 / 140</span>
+                                </span>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mdc-dialog__actions">
+                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="close">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label">Cancel</span>
+                </button>
+                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="accept">
+                    <div class="mdc-button__ripple"></div>
+                    <span class="mdc-button__label">OK</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="mdc-dialog__scrim"></div>
+</div>

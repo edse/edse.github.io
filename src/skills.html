@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="index.scss" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <title>Emerson Estrella</title>
+</head>
+
+<body class="mdc-typography">
+
+    <!-- Menu -->
+    <include src="src/partials/menu.html">
+        {
+        "selectedHome": "",
+        "selectedAbout": "",
+        "selectedSkills": " mdc-deprecated-list-item--activated",
+        "selectedWork": "",
+        "selectedProjects": "",
+        "selectedPhotos": "",
+        "selectedMusic": "",
+        "selectedResume": "",
+        "selectedContact": ""
+        }
+    </include>
+
+    <div class="mdc-drawer-app-content">
+
+        <!-- Header -->
+        <include src="src/partials/header.html">
+            {
+            "title": "Some of my working tools"
+            }
+        </include>
+
+        <main class="main-content" id="main-content">
+            <div class="mdc-top-app-bar--fixed-adjust"></div>
+
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-12">
+                        <include src="src/partials/skills.html"></include>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script defer src="index.js" type="module"></script>
+</body>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="index.scss" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <title>Emerson Estrella</title>
+</head>
+
+<body class="mdc-typography">
+
+    <!-- Menu -->
+    <include src="src/partials/menu.html">
+        {
+        "selectedHome": "",
+        "selectedAbout": "",
+        "selectedSkills": "",
+        "selectedWork": " mdc-deprecated-list-item--activated",
+        "selectedProjects": "",
+        "selectedPhotos": "",
+        "selectedMusic": "",
+        "selectedResume": "",
+        "selectedContact": ""
+        }
+    </include>
+
+    <div class="mdc-drawer-app-content">
+
+        <!-- Header -->
+        <include src="src/partials/header.html">
+            {
+            "title": "What I've been working on"
+            }
+        </include>
+
+        <main class="main-content" id="main-content">
+            <div class="mdc-top-app-bar--fixed-adjust"></div>
+            <!-- Content -->
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <a class="mdc-card__primary-action">
+                                <div class="mdc-card__media mdc-card__media--16-9"
+                                    style="background-image: url(assets/images/kpn-shop.png);"></div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="card__title">KPN online shop</div>
+                                    <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
+                                </div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="demo-card__supporting-text">Creating and maintaining a backend for the KPN online shop.</div>
+                                </div>
+                                <div class="mdc-card__actions">
+                                    <!-- <a href="https://kpn.com/shop" target="_blank" class="mdc-button mdc-button--leading">
+                                        <span class="mdc-button__ripple"></span>
+                                        <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                        <span class="mdc-button__label">kpn.com/shop</span></button> -->
+                                </div>
+                                <div class="mdc-card__ripple"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(assets/images/rest.png);"></div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="card__title">KPN Digital Engine</div>
+                                <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
+                            </div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="demo-card__supporting-text">A group of microservices providing 30+ APIs.</div>
+                            </div>
+                            <div class="mdc-card__actions">
+                                <!-- <a href="https://kpn.com" target="_blank" class="mdc-button mdc-button--leading">
+                                    <span class="mdc-button__ripple"></span>
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                    <span class="mdc-button__label">kpn.com</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(assets/images/awslogo.png);"></div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="card__title">AWS</div>
+                                <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
+                            </div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="demo-card__supporting-text">Migrating a group of microservices to AWS.</div>
+                            </div>
+                            <div class="mdc-card__actions">
+                                <!-- <a href="https://kpn.com" target="_blank" class="mdc-button mdc-button--leading">
+                                    <span class="mdc-button__ripple"></span>
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                    <span class="mdc-button__label">kpn.com</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(assets/images/rest.png);"></div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="card__title">KPN Voucher Engine</div>
+                                <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
+                            </div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="demo-card__supporting-text">A microservice responsible for generating, validating, and redeeming voucher codes.</div>
+                            </div>
+                            <div class="mdc-card__actions">
+                                <!-- <a href="https://kpn.com" target="_blank" class="mdc-button mdc-button--leading">
+                                    <span class="mdc-button__ripple"></span>
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                    <span class="mdc-button__label">kpn.com</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(assets/images/kpn-play.png);"></div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="card__title">Play van KPN</div>
+                                <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
+                            </div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="demo-card__supporting-text">Backend and frontend for an iTV application.</div>
+                            </div>
+                            <div class="mdc-card__actions">
+                                <!-- <a href="https://www.kpn.com/televisie/online-tv-kijken.htm" target="_blank" class="mdc-button mdc-button--leading">
+                                    <span class="mdc-button__ripple"></span>
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                    <span class="mdc-button__label">kpn.com/televisie</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(assets/images/true.png);"></div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="card__title">True B.V.</div>
+                                <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
+                            </div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="demo-card__supporting-text">Backend application for a hosting company.</div>
+                            </div>
+                            <div class="mdc-card__actions">
+                                <!-- <a href="https://true.nl" target="_blank" class="mdc-button mdc-button--leading">
+                                    <span class="mdc-button__ripple"></span>
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                    <span class="mdc-button__label">true.nl</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(assets/images/segundatela.jpg);"></div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="card__title">Jornal da Cultura</div>
+                                <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
+                            </div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="demo-card__supporting-text">Second screen application.</div>
+                            </div>
+                            <div class="mdc-card__actions">
+                                <!-- <a href="https://tvcultura.com.br/programas/jornaldacultura" target="_blank" class="mdc-button mdc-button--leading">
+                                    <span class="mdc-button__ripple"></span>
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                    <span class="mdc-button__label">jornaldacultura</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(assets/images/tv-cultura.png);"></div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="card__title">TV Cultura</div>
+                                <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
+                            </div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="demo-card__supporting-text">Content management system for a brazilian TV and radio network.</div>
+                            </div>
+                            <div class="mdc-card__actions">
+                                <!-- <a href="https://tvcultura.com.br/" target="_blank" class="mdc-button mdc-button--leading">
+                                    <span class="mdc-button__ripple"></span>
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                    <span class="mdc-button__label">tvcultura.com.br</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(assets/images/cmais2.png);"></div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="card__title">cmais+</div>
+                                <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
+                            </div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="demo-card__supporting-text">Portal with 50+ websites.</div>
+                            </div>
+                            <div class="mdc-card__actions">
+                                <!-- <a href="https://web.archive.org/web/20150224205315/http://cmais.com.br/" target="_blank" class="mdc-button mdc-button--leading">
+                                    <span class="mdc-button__ripple"></span>
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                    <span class="mdc-button__label">cmais.com.br</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-3">
+                        <div class="mdc-card">
+                            <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(assets/images/fpa-site.png);"></div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="card__title">Fundação Padre Anchieta</div>
+                                <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
+                            </div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="demo-card__supporting-text">Customer relationship management system</div>
+                            </div>
+                            <div class="mdc-card__actions">
+                                <!-- <a href="https://fpa.com.br" target="_blank" class="mdc-button mdc-button--leading">
+                                    <span class="mdc-button__ripple"></span>
+                                    <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                    <span class="mdc-button__label">fpa.com.br</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script defer src="index.js" type="module"></script>
+</body>
