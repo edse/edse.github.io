@@ -31,8 +31,8 @@ const textFields = [].map.call(document.querySelectorAll('.mdc-text-field'), fun
 const
   screen = {
     small: 0,
-    medium: 599,
-    large: 1239
+    medium: 960,
+    large: 1280
   };
 
 // observe window resize
@@ -50,9 +50,9 @@ function resizeHandler() {
   for (let s in screen) {
     if (iw >= screen[s]) size = s;
   }
-  if(size == "small") {
-    drawer.open = false
-  } else {
+  if(size == "large") {
     drawer.open = true
+  } else {
+    drawer.open = false
   }
 }
