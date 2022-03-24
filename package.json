@@ -2,10 +2,9 @@
   "name": "emerson.estrella",
   "version": "1.0.0",
   "description": "Emerson Estrella personal website",
-  "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build",
+    "build": "parcel build src/index.html src/static.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "targets": {
