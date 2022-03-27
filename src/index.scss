@@ -26,11 +26,11 @@
 @use "../node_modules/@material/fab";
 
 .my-image-list {
-  @include image-list.standard-columns(5);
+  @include image-list.standard-columns(2);
 }
 
 .my-masonry-image-list {
-  @include image-list.masonry-columns(5);
+  @include image-list.masonry-columns(2);
 }
 
 @include dialog.core-styles;
@@ -170,4 +170,13 @@ aside .mdc-typography--overline {
 
 @font-face {
   font-display: swap;
+}
+
+.title {
+  // border-bottom: 1px solid rgba(0,0,0,.25);
+  margin-top: 48px;
+}
+
+.title:first-child {
+  margin-top: 0px;
 }
