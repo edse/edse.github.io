@@ -9,7 +9,8 @@
   },
   "targets": {
     "default": {
-      "distDir": "docs"
+      "distDir": "docs",
+      "sourceMap": false
     }
   },
   "author": "Emerson Estrella",
