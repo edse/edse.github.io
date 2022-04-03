@@ -26,41 +26,31 @@ const listItemRipples = list.listElements.map((listItemEl) => new MDCRipple(list
 //     return new MDCTextField(el);
 // });
 
-const
-  screen = {
-    small: 0,
-    medium: 960,
-    large: 1280
-  };
+// const
+//   screen = {
+//     small: 0,
+//     medium: 960,
+//     large: 1280
+//   };
 
-// observe window resize
-window.addEventListener('resize', resizeHandler);
+// // observe window resize
+// window.addEventListener('resize', resizeHandler);
 
-// initial call
-resizeHandler();
+// // initial call
+// resizeHandler();
 
-// calculate size
-function resizeHandler() {
-  // get window width
-  const iw = window.innerWidth; 
-  // determine named size
-  let size = null;
-  for (let s in screen) {
-    if (iw >= screen[s]) size = s;
-  }
-  if(size == "large") {
-    drawer.open = true;
-  } else {
-    drawer.open = false;
-  }
-}
-
-// function openDrawer() {
-//   // document.getElementById("menu").style.display = "block";
-//   document.getElementById("menu").classList.remove("hidden");
-// }
-
-// function closeDrawer() {
-//   // document.getElementById("menu").style.display = "none";
-//   document.getElementById("menu").classList.add("hidden");
+// // calculate size
+// function resizeHandler() {
+//   // get window width
+//   const iw = window.innerWidth; 
+//   // determine named size
+//   let size = null;
+//   for (let s in screen) {
+//     if (iw >= screen[s]) size = s;
+//   }
+//   if(size == "large") {
+//     drawer.open = true;
+//   } else {
+//     drawer.open = false;
+//   }
 // }
