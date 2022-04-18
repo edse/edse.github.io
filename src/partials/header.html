@@ -1,8 +1,76 @@
-<header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
+<header class="mdc-top-app-bar mdc-top-app-bar--fixed">
     <div class="mdc-top-app-bar__row">
-        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-            <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
-            <span class="mdc-top-app-bar__title">{{title}}</span>
+        <section class="mdc-top-app-bar__section">
+            <a href="#" id="menu-btn" class="material-icons mdc-ripple-upgraded--unbounded mdc-ripple-upgraded mdc-top-app-bar__navigation-icon">menu</a>
+            <!-- <span class="mdc-top-app-bar__title">{{title}}</span> -->
+            <div class="mdc-tab-bar" role="tablist">
+                <div class="mdc-tab-scroller mdc-tab-scroller--align-center">
+                  <div class="mdc-tab-scroller__scroll-area">
+                    <div class="mdc-tab-scroller__scroll-content">
+            
+                      <a href="index.html" class="mdc-tab mdc-tab--min-width" role="tab" tabindex="0">
+                        <span class="mdc-tab__content">
+                          <span class="mdc-tab__text-label">About</span>
+                        </span>
+                        <span class="mdc-tab-indicator{{selectedAbout}}">
+                          <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                        </span>
+                        <span class="mdc-tab__ripple"></span>
+                      </a>
+            
+                      <a href="skills.html" class="mdc-tab mdc-tab--min-width" role="tab" tabindex="0">
+                        <span class="mdc-tab__content">
+                          <span class="mdc-tab__text-label">Skills</span>
+                        </span>
+                        <span class="mdc-tab-indicator{{selectedSkills}}">
+                          <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                        </span>
+                        <span class="mdc-tab__ripple"></span>
+                      </a>
+            
+                      <a href="work.html" class="mdc-tab mdc-tab--min-width" role="tab" tabindex="0">
+                        <span class="mdc-tab__content">
+                          <span class="mdc-tab__text-label">Work</span>
+                        </span>
+                        <span class="mdc-tab-indicator{{selectedWork}}">
+                          <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                        </span>
+                        <span class="mdc-tab__ripple"></span>
+                      </a>
+            
+                      <a href="projects.html" class="mdc-tab mdc-tab--min-width" role="tab" tabindex="0">
+                        <span class="mdc-tab__content">
+                          <span class="mdc-tab__text-label">Projects</span>
+                        </span>
+                        <span class="mdc-tab-indicator{{selectedProjects}}">
+                          <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                        </span>
+                        <span class="mdc-tab__ripple"></span>
+                      </a>
+            
+                      <a href="resume.html" class="mdc-tab mdc-tab--min-width" role="tab" tabindex="0">
+                        <span class="mdc-tab__content">
+                          <span class="mdc-tab__text-label">Resume</span>
+                        </span>
+                        <span class="mdc-tab-indicator{{selectedResume}}">
+                          <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                        </span>
+                        <span class="mdc-tab__ripple"></span>
+                      </a>
+            
+                      <a href="contact.html" class="mdc-tab mdc-tab--min-width" role="tab" tabindex="0">
+                        <span class="mdc-tab__content">
+                          <span class="mdc-tab__text-label">Contact</span>
+                        </span>
+                        <span class="mdc-tab-indicator{{selectedContact}}">
+                          <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                        </span>
+                        <span class="mdc-tab__ripple"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>           
         </section>
     </div>
 </header>

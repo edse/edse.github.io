@@ -3,7 +3,7 @@
 <body class="mdc-typography">
 
   <!-- Menu -->
-  <include src="src/partials/menu.html">
+  <include src="src/partials/drawer.html">
     {
       "selectedHome": "",
       "selectedAbout": " mdc-deprecated-list-item--activated",
@@ -23,6 +23,15 @@
     <include src="src/partials/header.html">
       {
         "title": "A Brazilian, a husband, and a father of two."
+        "selectedHome": "",
+        "selectedAbout": "  mdc-tab-indicator--active",
+        "selectedSkills": "",
+        "selectedWork": "",
+        "selectedProjects": "",
+        "selectedPhotos": "",
+        "selectedMusic": "",
+        "selectedResume": "",
+        "selectedContact": ""
       }    
     </include>
 
@@ -71,6 +80,12 @@
               </div>
 
               <!-- <div class="mdc-card__actions"></div> -->
+
+              <a href="skills/" class="mdc-button mdc-button--leading">
+                <span class="mdc-button__ripple"></span>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                <span class="mdc-button__label">About me</span>
+              </a>
             </div>
           </div>
           <div class="mdc-layout-grid__cell--span-4">

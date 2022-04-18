@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<include src="src/partials/head.html"></include>
+<include src="src/partials/head.html">{"title": "Some experiments just for learning purposes"}</include>
 <body class="mdc-typography">
 
     <!-- Menu -->
-    <include src="src/partials/menu.html">
+    <include src="src/partials/drawer.html">
         {
         "selectedHome": "",
         "selectedAbout": "",
@@ -22,8 +22,17 @@
         <!-- Header -->
         <include src="src/partials/header.html">
             {
-            "title": "Some experiments just for learning purposes"
-            }
+                "title": "Some experiments just for learning purposes",
+                "selectedHome": "",
+                "selectedAbout": "",
+                "selectedSkills": "",
+                "selectedWork": "",
+                "selectedProjects": " mdc-tab-indicator--active",
+                "selectedPhotos": "",
+                "selectedMusic": "",
+                "selectedResume": "",
+                "selectedContact": ""
+              }
         </include>
 
         <main class="main-content" id="main-content">
@@ -31,7 +40,7 @@
             <!-- Content -->
             <div class="mdc-layout-grid">
                 <div class="mdc-layout-grid__inner">
-                    <div class="mdc-layout-grid__cell--span-2">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
                             <a href="https://slotthereum.github.io" target="_blank" class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
@@ -56,7 +65,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-2">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
                             <a href="https://html5physics.herokuapp.com/editor" target="_blank" class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
@@ -81,7 +90,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-2">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
                             <a href="https://shapepuzzle.appspot.com" target="_blank" class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
@@ -106,7 +115,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-2">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
                             <a href="https://html5videopuzzle.appspot.com" target="_blank" class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
@@ -131,7 +140,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-2">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
                             <a href="https://html5snapshot.appspot.com" target="_blank" class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
@@ -157,11 +166,17 @@
                         </div>
                     </div>
                 </div>
-                <a href="resume.html" class="mdc-button mdc-button--leading">
-                    <span class="mdc-button__ripple"></span>
-                    <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
-                    <span class="mdc-button__label">Resume</span>
-                </a>
+            </div>
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell">
+                        <a href="resume.html" class="mdc-button mdc-button--leading">
+                            <span class="mdc-button__ripple"></span>
+                            <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                            <span class="mdc-button__label">Resume</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </main>
     </div>

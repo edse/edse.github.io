@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<include src="src/partials/head.html"></include>
+<include src="src/partials/head.html">{"title": "No filter only photos"}</include>
 <body class="mdc-typography">
 
     <!-- Menu -->
-    <include src="src/partials/menu.html">
+    <include src="src/partials/drawer.html">
         {
         "selectedHome": "",
         "selectedAbout": "",
@@ -20,11 +20,7 @@
     <div class="mdc-drawer-app-content">
 
         <!-- Header -->
-        <include src="src/partials/header.html">
-            {
-            "title": "No filter only"
-            }
-        </include>
+        <include src="src/partials/header.html">{"title": "No filter only photos"}</include>
 
         <main class="main-content" id="main-content">
             <div class="mdc-top-app-bar--fixed-adjust"></div>

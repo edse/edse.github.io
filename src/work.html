@@ -4,7 +4,7 @@
 <body class="mdc-typography">
 
     <!-- Menu -->
-    <include src="src/partials/menu.html">
+    <include src="src/partials/drawer.html">
         {
         "selectedHome": "",
         "selectedAbout": "",
@@ -23,7 +23,16 @@
         <!-- Header -->
         <include src="src/partials/header.html">
             {
-            "title": "What I've been working on"
+                "title": "What I've been working on",
+                "selectedHome": "",
+                "selectedAbout": "",
+                "selectedSkills": "",
+                "selectedWork": " mdc-tab-indicator--active",
+                "selectedProjects": "",
+                "selectedPhotos": "",
+                "selectedMusic": "",
+                "selectedResume": "",
+                "selectedContact": ""
             }
         </include>
 
@@ -32,9 +41,9 @@
             <!-- Content -->
             <div class="mdc-layout-grid">
                 <div class="mdc-layout-grid__inner">
-                    <div class="mdc-layout-grid__cell--span-2">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
-                            <a class="mdc-card__primary-action">
+                            <div class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
                                     style="background-image: url(assets/images/kpn-shop.png?as=jpg&width=1000);"></div>
                                 <div class="mdc-card-wrapper__text-section">
@@ -52,14 +61,14 @@
                                         <span class="mdc-button__label">kpn.com/shop</span></button> -->
                                 </div>
                                 <div class="mdc-card__ripple"></div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-2">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
-                            <a class="mdc-card__primary-action">
+                            <div class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
-                                    style="background-image: url(assets/images/rest.png?as=jpg&width=1000);"></div>
+                                    style="background-image: url(assets/images/kpn-logo-back.png?as=jpg&width=1000);"></div>
                                 <div class="mdc-card-wrapper__text-section">
                                     <div class="card__title">KPN Digital Engine</div>
                                     <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
@@ -76,14 +85,14 @@
                                     </a> -->
                                 </div>
                                 <div class="mdc-card__ripple"></div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-2">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
-                            <a class="mdc-card__primary-action">
+                            <div class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
-                                    style="background-image: url(assets/images/awslogo.png?as=jpg&width=1000);"></div>
+                                    style="background-image: url(assets/images/awslogo.png?width=1000);"></div>
                                 <div class="mdc-card-wrapper__text-section">
                                     <div class="card__title">AWS</div>
                                     <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
@@ -100,12 +109,12 @@
                                 </a> -->
                                 </div>
                                 <div class="mdc-card__ripple"></div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-2">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
-                            <a class="mdc-card__primary-action">
+                            <div class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
                                     style="background-image: url(assets/images/rest.png?as=jpg&width=1000);"></div>
                                 <div class="mdc-card-wrapper__text-section">
@@ -113,8 +122,7 @@
                                     <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
                                 </div>
                                 <div class="mdc-card-wrapper__text-section">
-                                    <div class="demo-card__supporting-text">A microservice for generating and redeeming
-                                        voucher codes.</div>
+                                    <div class="demo-card__supporting-text">A microservice for generating and redeeming voucher codes.</div>
                                 </div>
                                 <div class="mdc-card__actions">
                                     <!-- <a href="https://kpn.com" target="_blank" class="mdc-button mdc-button--leading">
@@ -124,12 +132,12 @@
                                 </a> -->
                                 </div>
                                 <div class="mdc-card__ripple"></div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-2">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
-                            <a class="mdc-card__primary-action">
+                            <div class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
                                     style="background-image: url(assets/images/kpn-play.png?as=jpg&width=1000);"></div>
                                 <div class="mdc-card-wrapper__text-section">
@@ -148,12 +156,12 @@
                                 </a> -->
                                 </div>
                                 <div class="mdc-card__ripple"></div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-2">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
-                            <a class="mdc-card__primary-action">
+                            <div class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
                                     style="background-image: url(assets/images/true.png?as=jpg&width=1000);"></div>
                                 <div class="mdc-card-wrapper__text-section">
@@ -161,8 +169,7 @@
                                     <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
                                 </div>
                                 <div class="mdc-card-wrapper__text-section">
-                                    <div class="demo-card__supporting-text">Backend application for a hosting company.
-                                    </div>
+                                    <div class="demo-card__supporting-text">Backend application for a hosting company.</div>
                                 </div>
                                 <div class="mdc-card__actions">
                                     <!-- <a href="https://true.nl" target="_blank" class="mdc-button mdc-button--leading">
@@ -172,12 +179,12 @@
                                     </a> -->
                                 </div>
                                 <div class="mdc-card__ripple"></div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-2">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
-                            <a class="mdc-card__primary-action">
+                            <div class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
                                     style="background-image: url(assets/images/segundatela.jpg?as=jpg&width=1000);">
                                 </div>
@@ -186,7 +193,7 @@
                                     <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
                                 </div>
                                 <div class="mdc-card-wrapper__text-section">
-                                    <div class="demo-card__supporting-text">Second screen application.</div>
+                                    <div class="demo-card__supporting-text">Second screen application for a brazilian TV show.</div>
                                 </div>
                                 <div class="mdc-card__actions">
                                     <!-- <a href="https://tvcultura.com.br/programas/jornaldacultura" target="_blank" class="mdc-button mdc-button--leading">
@@ -196,12 +203,12 @@
                                     </a> -->
                                 </div>
                                 <div class="mdc-card__ripple"></div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-2">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
-                            <a class="mdc-card__primary-action">
+                            <div class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
                                     style="background-image: url(assets/images/tv-cultura.png?as=jpg&width=1000);">
                                 </div>
@@ -210,8 +217,7 @@
                                     <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
                                 </div>
                                 <div class="mdc-card-wrapper__text-section">
-                                    <div class="demo-card__supporting-text">Content management system for a brazilian TV
-                                        and radio network.</div>
+                                    <div class="demo-card__supporting-text">Content management system for a brazilian TV and radio network.</div>
                                 </div>
                                 <div class="mdc-card__actions">
                                     <!-- <a href="https://tvcultura.com.br/" target="_blank" class="mdc-button mdc-button--leading">
@@ -221,12 +227,12 @@
                                     </a> -->
                                 </div>
                                 <div class="mdc-card__ripple"></div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-2">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
-                            <a class="mdc-card__primary-action">
+                            <div class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
                                     style="background-image: url(assets/images/cmais2.png?as=jpg&width=1000);"></div>
                                 <div class="mdc-card-wrapper__text-section">
@@ -234,22 +240,22 @@
                                     <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
                                 </div>
                                 <div class="mdc-card-wrapper__text-section">
-                                    <div class="demo-card__supporting-text">Portal with 50+ websites.</div>
+                                    <div class="demo-card__supporting-text">Development of a web portal with 50+ websites.</div>
                                 </div>
                                 <div class="mdc-card__actions">
-                                    <!-- <a href="https://web.archive.org/web/20150224205315/http://cmais.com.br/" target="_blank" class="mdc-button mdc-button--leading">
+                                    <!-- <a href="https://web.archive.org/web/201502210005315/http://cmais.com.br/" target="_blank" class="mdc-button mdc-button--leading">
                                         <span class="mdc-button__ripple"></span>
                                         <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
                                         <span class="mdc-button__label">cmais.com.br</span>
                                     </a> -->
                                 </div>
                                 <div class="mdc-card__ripple"></div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-2">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
-                            <a class="mdc-card__primary-action">
+                            <div class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
                                     style="background-image: url(assets/images/fpa-site.png?as=jpg&width=1000);"></div>
                                 <div class="mdc-card-wrapper__text-section">
@@ -257,7 +263,31 @@
                                     <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
                                 </div>
                                 <div class="mdc-card-wrapper__text-section">
-                                    <div class="demo-card__supporting-text">Customer relationship management system
+                                    <div class="demo-card__supporting-text">Development of a custom made customer relationship management system.</div>
+                                </div>
+                                <div class="mdc-card__actions">
+                                    <!-- <a href="https://fpa.com.br" target="_blank" class="mdc-button mdc-button--leading">
+                                        <span class="mdc-button__ripple"></span>
+                                        <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                        <span class="mdc-button__label">fpa.com.br</span>
+                                    </a> -->
+                                </div>
+                                <div class="mdc-card__ripple"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary-action">
+                                <div class="mdc-card__media mdc-card__media--16-9"
+                                    style="background-image: url(assets/images/sbs.png?as=jpg&width=1000);"></div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="card__title">SBS</div>
+                                    <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
+                                </div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="demo-card__supporting-text">
+                                        Development of backend and frontend for SBS Australia news and current affairs websites.
                                     </div>
                                 </div>
                                 <div class="mdc-card__actions">
@@ -268,15 +298,95 @@
                                     </a> -->
                                 </div>
                                 <div class="mdc-card__ripple"></div>
-                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary-action">
+                                <div class="mdc-card__media mdc-card__media--16-9"
+                                    style="background-image: url(assets/images/speedalert.png?as=jpg&width=1000);"></div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="card__title">Speed Alert</div>
+                                    <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
+                                </div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="demo-card__supporting-text">
+                                        Development of website, online shop and CRM.
+                                    </div>
+                                </div>
+                                <div class="mdc-card__actions">
+                                    <!-- <a href="https://fpa.com.br" target="_blank" class="mdc-button mdc-button--leading">
+                                        <span class="mdc-button__ripple"></span>
+                                        <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                        <span class="mdc-button__label">fpa.com.br</span>
+                                    </a> -->
+                                </div>
+                                <div class="mdc-card__ripple"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary-action">
+                                <div class="mdc-card__media mdc-card__media--16-9"
+                                    style="background-image: url(assets/images/irmaourso.png?as=jpg&width=1000);"></div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="card__title">Disney</div>
+                                    <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
+                                </div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="demo-card__supporting-text">
+                                        Website development
+                                    </div>
+                                </div>
+                                <div class="mdc-card__actions">
+                                    <!-- <a href="https://fpa.com.br" target="_blank" class="mdc-button mdc-button--leading">
+                                        <span class="mdc-button__ripple"></span>
+                                        <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                        <span class="mdc-button__label">fpa.com.br</span>
+                                    </a> -->
+                                </div>
+                                <div class="mdc-card__ripple"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell">
+                        <div class="mdc-card">
+                            <div class="mdc-card__primary-action">
+                                <div class="mdc-card__media mdc-card__media--16-9"
+                                    style="background-image: url(assets/images/tvratimbum.png?as=jpg&width=1000);">
+                                </div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="card__title">TV Rá-Tim-Bum</div>
+                                    <!-- <include src="src/partials/chip.html">{"title": "backend"}</include> -->
+                                </div>
+                                <div class="mdc-card-wrapper__text-section">
+                                    <div class="demo-card__supporting-text">Website development</div>
+                                </div>
+                                <div class="mdc-card__actions">
+                                    <!-- <a href="https://tvcultura.com.br/" target="_blank" class="mdc-button mdc-button--leading">
+                                        <span class="mdc-button__ripple"></span>
+                                        <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                        <span class="mdc-button__label">tvcultura.com.br</span>
+                                    </a> -->
+                                </div>
+                                <div class="mdc-card__ripple"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <a href="projects.html" class="mdc-button mdc-button--leading">
-                    <span class="mdc-button__ripple"></span>
-                    <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
-                    <span class="mdc-button__label">Side projects</span>
-                </a>
+            </div>
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell">
+                        <a href="projects.html" class="mdc-button mdc-button--leading">
+                            <span class="mdc-button__ripple"></span>
+                            <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                            <span class="mdc-button__label">Side projects</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </main>
     </div>

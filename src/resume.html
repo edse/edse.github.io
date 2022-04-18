@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<include src="src/partials/head.html"></include>
+<include src="src/partials/head.html">{"title": "Resume"}</include>
 <body class="mdc-typography">
 
     <!-- Menu -->
-    <include src="src/partials/menu.html">
+    <include src="src/partials/drawer.html">
         {
         "selectedHome": "",
         "selectedAbout": "",
@@ -22,7 +22,16 @@
         <!-- Header -->
         <include src="src/partials/header.html">
             {
-            "title": "Resume"
+                "title": "Resume",
+                "selectedHome": "",
+                "selectedAbout": "",
+                "selectedSkills": "",
+                "selectedWork": "",
+                "selectedProjects": "",
+                "selectedPhotos": "",
+                "selectedMusic": "",
+                "selectedResume": " mdc-tab-indicator--active",
+                "selectedContact": ""
             }
         </include>
 
@@ -32,8 +41,8 @@
             <!-- Content -->
             <a href="EmersonEstrella.pdf" download class="mdc-fab mdc-fab--extended">
                 <div class="mdc-fab__ripple"></div>
-                <span class="material-icons mdc-fab__icon">download</span>
-                <span class="mdc-fab__label">PDF</span>
+                <span class="material-icons mdc-fab__icon">picture_as_pdf</span>
+                <span class="mdc-fab__label">download</span>
             </a>
 
             <div class="mdc-layout-grid">
@@ -41,47 +50,47 @@
                     <div class="mdc-layout-grid__cell--span-12">
                         <div class="mdc-card">
                             <div class="mdc-card-wrapper__text-section">
-                                <h1 class="mdc-typography--headline3">Emerson Estrella</h1>
-                                <a href="mailto: emerson.estrella@gmail.com" class="mdc-button mdc-button--leading">
+                                <h1 class="title mdc-typography--headline3">Resume</h1>
+                                <!-- <a href="mailto: emerson.estrella@gmail.com" class="mdc-button mdc-button--leading">
                                     <span class="mdc-button__ripple"></span>
                                     <i class="material-icons mdc-button__icon" aria-hidden="true">email</i>
                                     <span class="mdc-button__label">emerson.estrella@gmail.com</span>
-                                </a>
+                                </a> -->
 
-                                <h2 class="title mdc-typography--headline4">About me</h2>
-                                <p class="mdc-typography--body1">I'm a Brazilian, a husband, a father of two, and a passionate software engineer.</p>
-                                <p class="mdc-typography--body1">I’ve been working for companies from different sizes, cultures, countries and continents.</p>
-                                <p class="mdc-typography--body1">I love to create solutions and to learn new technologies.</p>
-                                <p class="mdc-typography--body1">What keeps me moving is seeing how impactful my solutions can be.</p>
-                                <p class="mdc-typography--body1">Currently I’m building and maintaining backend infrastructure for a Dutch telecom called KPN.</p>
+                                <div class="title mdc-typography--headline6">Emerson Estrella</div>
+                                <p class="demo-card__supporting-text">I'm a Brazilian, a husband, a father of two, and a passionate software engineer.</p>
+                                <p class="demo-card__supporting-text">I've been working for companies from different sizes, cultures, countries and continents.</p>
+                                <p class="demo-card__supporting-text">I love to create solutions and to learn new technologies.</p>
+                                <p class="demo-card__supporting-text">What keeps me moving is seeing how impactful my solutions can be.</p>
+                                <p class="demo-card__supporting-text">Currently I'm building and maintaining backend infrastructure for a Dutch telecom called KPN.</p>
 
-                                <h2 class="title mdc-typography--headline4">Goals</h2>
-                                <h3 class="mdc-typography--subtitle1">To use and enhance my skills and knowledge of the latest development methods and technologies in areas as such: Software development; Programming languages; Graphical User Interface Design; Data driven applications; Math, and Technology Research.</h3>
+                                <h2 class="title mdc-typography--headline6">Goals</h2>
+                                <p class="demo-card__supporting-text">To use and enhance my skills and knowledge of the latest methods and technologies in areas such as: Software development; Programming languages; Graphical User Interface Design; Data driven applications; Math, and Technology Research.</p>
 
-                                <h2 class="title mdc-typography--headline4">Education</h2>
-                                <h3 class="mdc-typography--subtitle1">University of California, Berkeley, Software Engineering for Software as a Service. Coursework including: Test Driven Development & Ruby on Rails</h3>
-                                <h3 class="mdc-typography--subtitle1">Multimedia, Raffles La Salle Institute (Sydney, Australia). Coursework including: design principles and the creative media (including audio, video and 2D & 3D animation), and multimedia authoring.</h3>
-                                <h3 class="mdc-typography--subtitle1">Computer Science, PUC-SP, São Paulo. Coursework including: C++ and Java programming, Databases, Computer networks, Network security, and Distributed multimedia.</h3>
+                                <h2 class="title mdc-typography--headline6">Education</h2>
+                                <p class="demo-card__supporting-text">University of California, Berkeley, Software Engineering for Software as a Service. Coursework including: Test Driven Development & Ruby on Rails</p>
+                                <p class="demo-card__supporting-text">Multimedia, Raffles La Salle Institute (Sydney, Australia). Coursework including: design principles and the creative media (including audio, video and 2D & 3D animation), and multimedia authoring.</p>
+                                <p class="demo-card__supporting-text">Computer Science, PUC-SP, São Paulo. Coursework including: C++ and Java programming, Databases, Computer networks, Network security, and Distributed multimedia.</p>
 
-                                <h2 class="title mdc-typography--headline4">Programming languages</h2>
-                                <h3 class="mdc-typography--subtitle1">Python, PHP, Javascript, Solidity, Dart, Java,  C, C++.</h3>
+                                <h2 class="title mdc-typography--headline6">Programming languages</h2>
+                                <p class="demo-card__supporting-text">Python, PHP, Javascript, Solidity, Dart, Java,  C, C++.</p>
 
-                                <h2 class="title mdc-typography--headline4">Frameworks</h2>
-                                <h3 class="mdc-typography--subtitle1">Django, Django Rest Framework, Symfony, CakePHP, CodeIgniter.</h3>
+                                <h2 class="title mdc-typography--headline6">Frameworks</h2>
+                                <p class="demo-card__supporting-text">Django, Django Rest Framework, Symfony, CakePHP, CodeIgniter.</p>
 
-                                <h2 class="title mdc-typography--headline4">CI/CD</h2>
-                                <h3 class="mdc-typography--subtitle1">Git, Jenkins, Docker, Kubernetes.</h3>
+                                <h2 class="title mdc-typography--headline6">CI/CD</h2>
+                                <p class="demo-card__supporting-text">Git, Jenkins, Docker, Kubernetes.</p>
 
-                                <h2 class="title mdc-typography--headline4">Web Development</h2>
-                                <h3 class="mdc-typography--subtitle1">HTML, CSS, SCSS, Angular, Vue.js, Material Design, Bootstrap, Gulp, Webpack, Parcel.</h3>
+                                <h2 class="title mdc-typography--headline6">Web Development</h2>
+                                <p class="demo-card__supporting-text">HTML, CSS, SCSS, Angular, Vue.js, Material Design, Bootstrap, Gulp, Webpack, Parcel.</p>
 
-                                <h2 class="title mdc-typography--headline4">Hosting</h2>
-                                <h3 class="mdc-typography--subtitle1">AWS, Google Cloud, Microsoft Azure.</h3>
+                                <h2 class="title mdc-typography--headline6">Hosting</h2>
+                                <p class="demo-card__supporting-text">AWS, Google Cloud, Microsoft Azure.</p>
 
-                                <h2 class="title mdc-typography--headline4">Professional experience</h2>
+                                <h2 class="title mdc-typography--headline6">Professional experience:</h2>
                                 <h2 class="mdc-typography--headline6">Senior Software Engineer - (Mar 2015 - Now) - Amsterdam,
                                     Netherlands</h2>
-                                <p class="mdc-typography--subtitle1">
+                                <p class="demo-card__supporting-text">
                                     Working for a Dutch telecom. Developing
                                     and maintaining 30+ micro services.<br />
                                     Company: KPN (Koninklijke KPN N.V.)<br />
@@ -92,7 +101,7 @@
 
                                 <h2 class="mdc-typography--headline6">Software Engineer - (May 2014 - Fev 2015) - Amsterdam,
                                     Netherlands</h2>
-                                <p class="mdc-typography--subtitle1">
+                                <p class="demo-card__supporting-text">
                                     Working for a Dutch hosting provider. Developing and maintaining their
                                     back-end and customer services application.<br />
                                     Company: TrueServer BV<br />
@@ -104,7 +113,7 @@
 
                                 <h2 class="mdc-typography--headline6">Software Engineer - (Jul 2008 - Mar 2014) - Sao Paulo,
                                     Brazil</h2>
-                                <p class="mdc-typography--subtitle1">
+                                <p class="demo-card__supporting-text">
                                     Working for a Brazilian broadcast company. Developing and maintaining 5 portals,
                                     over than 200 websites and several applications. <br />
                                     Company: TV Cultura <br />
@@ -123,7 +132,7 @@
                                 <hr class="mdc-deprecated-list-divider">
 
                                 <h2 class="mdc-typography--headline6">Web Developer - (Apr 2008 - Jun 2008) - Sao Paulo, Brazil</h2>
-                                <p class="mdc-typography--subtitle1">
+                                <p class="demo-card__supporting-text">
                                     Working remotely for a Canadian company. Developing an online abstract system
                                     that allows to manage meetings, conferences, congresses and more; from online
                                     booking to payments and reports. I have also build an eLearning system for them.
@@ -139,7 +148,7 @@
                                 <hr class="mdc-deprecated-list-divider">
 
                                 <h2 class="mdc-typography--headline6">Web Developer - (Oct 2007 - Mar 2008) - Sao Paulo, Brazil</h2>
-                                <p class="mdc-typography--subtitle1">
+                                <p class="demo-card__supporting-text">
                                     Developing the Brazilian version of Apple.com. Most of work was the translation
                                     of the US version changing its contents according with the requirements from the
                                     local Apple office.<br />
@@ -155,7 +164,7 @@
                                 <hr class="mdc-deprecated-list-divider">
 
                                 <h2 class="mdc-typography--headline6">Web Developer - (Feb 2007 - Jun 2007) - Sydney, Australia</h2>
-                                <p class="mdc-typography--subtitle1">
+                                <p class="demo-card__supporting-text">
                                     Developing a group of current affairs websites and a sophisticated content
                                     management system for a Broadcasting company in Australia.<br />
                                     Company: SBS (Special Broadcasting Service)<br />
@@ -170,7 +179,7 @@
                                 <hr class="mdc-deprecated-list-divider">
 
                                 <h2 class="mdc-typography--headline6">Web Developer - (Oct 2006 - Jan 2007) - Sydney, Australia</h2>
-                                <p class="mdc-typography--subtitle1">
+                                <p class="demo-card__supporting-text">
                                     Developing, creating and designing a brunches of search related websites.<br />
                                     Company: iMega Group<br />
                                     Websites: Confidential<br />
@@ -179,7 +188,7 @@
                                 <hr class="mdc-deprecated-list-divider">
 
                                 <h2 class="mdc-typography--headline6">Software Engineer - (Mar 2006 - Aug 2006) - Sydney, Australia</h2>
-                                    <p class="mdc-typography--subtitle1">
+                                    <p class="demo-card__supporting-text">
                                     Developing a speed limit warning system for mobiles and PDAs.<br />
                                     Company: Smart Car Technologies Ltd.<br />
                                     Product: SpeedAlertTM<br />
@@ -188,7 +197,7 @@
                                 <hr class="mdc-deprecated-list-divider">
 
                                 <h2 class="mdc-typography--headline6">Web Developer - (Jan 2006 - Aug 2006) - Sydney, Australia</h2>
-                                <p class="mdc-typography--subtitle1">
+                                <p class="demo-card__supporting-text">
                                     Developing database driven web sites, CRMs Systems, Email marketing campaigns,
                                     Flash Touch-Screen Applications and more.<br />
                                     Company: Icon Visual Marketing Ltd.<br />
@@ -197,7 +206,7 @@
                                 <hr class="mdc-deprecated-list-divider">
 
                                 <h2 class="mdc-typography--headline6">Web Developer - (Oct - Nov 2005) - Sydney, Australia</h2>
-                                <p class="mdc-typography--subtitle1">
+                                <p class="demo-card__supporting-text">
                                     Developing a web enrollment system, front and back-end, for an Entertainment
                                     company which is looking for performers candidates.<br />
                                     Company: USS Entertainment<br />
@@ -206,7 +215,7 @@
                                 <hr class="mdc-deprecated-list-divider">
 
                                 <h2 class="mdc-typography--headline6">Web Developer - (Aug - Sep 2005) - Sydney, Australia</h2>
-                                <p class="mdc-typography--subtitle1">
+                                <p class="demo-card__supporting-text">
                                     Flash web sites development.<br />
                                     Company: Blend34<br />
                                     Website: https://www.blend34.com.au<br />
@@ -216,7 +225,7 @@
                                 <hr class="mdc-deprecated-list-divider">
 
                                 <h2 class="mdc-typography--headline6">Web Developer - (Feb - Jul 2004) - Sydney, Australia</h2>
-                                <p class="mdc-typography--subtitle1">
+                                <p class="demo-card__supporting-text">
                                     E-commerce development.<br />
                                     Company: Sweet-Pea Pty. Ltd.<br />
                                     Technologies: PHP, MySQL, JavaScript, XHTML, CSS, XML<br />
@@ -224,7 +233,7 @@
                                 <hr class="mdc-deprecated-list-divider">
 
                                 <h2 class="mdc-typography--headline6">Web Developer/IT Director - (Jun 2002 - Feb 2004) - Sao Paulo, Brazil</h2>
-                                <p class="mdc-typography--subtitle1">
+                                <p class="demo-card__supporting-text">
                                     Disney.com.br development and maintenance, communication and marketing to
                                     integrate online and offline medias and DVD production.<br />
                                     Company: BubbleDot<br />
@@ -235,7 +244,7 @@
                                 <hr class="mdc-deprecated-list-divider">
 
                                 <h2 class="mdc-typography--headline6">Web Developer - (Jan 1999 - Mar 2002) - Sao Paulo, Brazil</h2>
-                                <p class="mdc-typography--subtitle1">
+                                <p class="demo-card__supporting-text">
                                     Development of E-commerce, Content Management Systems, Dynamic Flash web sites;
                                     Disney.com.br and Apple.com.br development and maintenance.<br />
                                     Company: Zenza Digital<br />
@@ -248,7 +257,7 @@
                                 <hr class="mdc-deprecated-list-divider">
 
                                 <h2 class="mdc-typography--headline6">Scientific Research - (Jun - Nov 1998) - Sao Paulo, Brazil</h2>
-                                <p class="mdc-typography--subtitle1">                                       
+                                <p class="demo-card__supporting-text">                                       
                                     Researching the use of semi-optics over the Internet for the institute CNPQ
                                     (National Advice for Scientific and Technological Development)<br />
                                     Book: "Semiotics on the Internet" by Lucia Santaella<br />
@@ -256,7 +265,7 @@
                                 <hr class="mdc-deprecated-list-divider">
 
                                 <h2 class="mdc-typography--headline6">PC Technician - (Apr 1996 - Dec 1997) - Sao Paulo, Brazil</h2>
-                                <p class="mdc-typography--subtitle1">
+                                <p class="demo-card__supporting-text">
                                     Assembling and repairing personal computers and Internet home setup.<br />
                                     Company: Quicknet LTDA<br />
                                 </p>
@@ -264,11 +273,17 @@
                             </div>
                         </div>
                     </div>
-                    <a href="contact.html" class="mdc-button mdc-button--leading">
-                        <span class="mdc-button__ripple"></span>
-                        <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
-                        <span class="mdc-button__label">Contact me</span>
-                    </a>   
+                </div>
+            </div>
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell">
+                        <a href="contact.html" class="mdc-button mdc-button--leading">
+                            <span class="mdc-button__ripple"></span>
+                            <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                            <span class="mdc-button__label">Contact me</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </main>

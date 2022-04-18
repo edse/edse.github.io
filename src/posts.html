@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<include src="src/partials/head.html"></include>
+<include src="src/partials/head.html">{"title": "What is going on"}</include>
 <body class="mdc-typography">
 
   <!-- Menu -->
-  <include src="src/partials/menu.html">
+  <include src="src/partials/drawer.html">
     {
     "selectedHome": " mdc-deprecated-list-item--activated",
     "selectedAbout": "",
@@ -20,11 +20,7 @@
   <div class="mdc-drawer-app-content">
 
     <!-- Header -->
-    <include src="src/partials/header.html">
-      {
-      "title": "What is going on"
-      }
-    </include>
+    <include src="src/partials/header.html">{"title": "What is going on"}</include>
 
     <main class="main-content" id="main-content">
       <div class="mdc-top-app-bar--fixed-adjust"></div>

@@ -1,87 +1,102 @@
 <!DOCTYPE html>
-<include src="src/partials/head.html"></include>
+<include src="src/partials/head.html">{"title": "Brazilian, husband, and father of two."}</include>
+
 <body class="mdc-typography">
 
-  <!-- Menu -->
-  <include src="src/partials/menu.html">
-    {
-      "selectedHome": "",
-      "selectedAbout": " mdc-deprecated-list-item--activated",
-      "selectedSkills": "",
-      "selectedWork": "",
-      "selectedProjects": "",
-      "selectedPhotos": "",
-      "selectedMusic": "",
-      "selectedResume": "",
-      "selectedContact": ""
-    }
-  </include>
-
-  <div class="mdc-drawer-app-content">
-
-    <!-- Header -->
-    <include src="src/partials/header.html">
-      {
-        "title": "Brazilian, husband, and father of two."
-      }    
+    <!-- Menu -->
+    <include src="src/partials/drawer.html">
+        {
+        "selectedHome": "",
+        "selectedAbout": " mdc-deprecated-list-item--activated",
+        "selectedSkills": "",
+        "selectedWork": "",
+        "selectedProjects": "",
+        "selectedPhotos": "",
+        "selectedMusic": "",
+        "selectedResume": "",
+        "selectedContact": ""
+        }
     </include>
 
-    <main class="about" id="main-content">
-      <div class="mdc-top-app-bar--fixed-adjust"></div>
+    <div class="mdc-drawer-app-content">
 
-      <!-- Content -->
-      <div class="mdc-layout-grid">
-        <div class="mdc-layout-grid__inner">
-          <div class="mdc-layout-grid__cell--span-8">
-            <div class="mdc-card">
-              <div class="mdc-card-wrapper__text-section">
-                <div class="title mdc-typography--headline4">About me</div>
-                <!-- <div class="card__subhead">a Brazilian, a husband, and a father of two</div> -->
-              </div>
-              <div class="mdc-card-wrapper__text-section">
-                  <p class="mdc-typography--subtitle1">I'm a Brazilian, a husband, a father of two, and a passionate software engineer.</p>
-                  <p class="mdc-typography--subtitle1">I love to create solutions and to learn new technologies.</p>
-                  <p class="mdc-typography--subtitle1">What keeps me moving is seeing how impactful my solutions can be.</p>
-              </div>
+        <!-- Header -->
+        <include src="src/partials/header.html">
+            {
+            "title": "Brazilian, husband, and father of two.",
+            "selectedHome": "",
+            "selectedAbout": " mdc-tab-indicator--active",
+            "selectedSkills": "",
+            "selectedWork": "",
+            "selectedProjects": "",
+            "selectedPhotos": "",
+            "selectedMusic": "",
+            "selectedResume": "",
+            "selectedContact": ""
+            }
+        </include>
 
-              <div class="mdc-card-wrapper__text-section">
-                <div class="title mdc-typography--headline4">20+ years of experience</div>
-              </div>
-              <div class="mdc-card-wrapper__text-section">
-                <div class="mdc-typography--subtitle1">
-                  <p>I've been working for companies from different sizes, cultures, and continents.</p>
-                  <p>Disney, Apple, HP, SBS Australia, TV Cultura and others.</p>
-                  <p>I'm currently building and maintaining backend infrastructure for a Dutch telecom.</p>
+        <main class="about" id="main-content">
+            <div class="mdc-top-app-bar--fixed-adjust"></div>
+
+            <!-- Content -->
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-8">
+                        <div class="mdc-card">
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="mdc-typography--headline6">About me</div>
+                            </div>
+                            <div class="mdc-card-wrapper__text-section demo-card__supporting-text">
+                                <p>I'm a Brazilian, a husband, a father of two, and a
+                                    passionate
+                                    software engineer.</p>
+                                <p>I love to create solutions and to learn new
+                                    technologies.</p>
+                                <p>What keeps me moving is seeing how impactful my
+                                    solutions can be.</p>
+                            </div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="mdc-typography--headline6">20+ years of experience</div>
+                            </div>
+                            <div class="mdc-card-wrapper__text-section demo-card__supporting-text">
+                                <p>I've been working for companies from different sizes, cultures, and continents.
+                                </p>
+                                <p>Disney, Apple, HP, SBS Australia, TV Cultura and others.</p>
+                                <p>I'm currently building and maintaining backend infrastructure for a Dutch
+                                    telecom.</p>
+                            </div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="mdc-typography--headline6">Education</div>
+                            </div>
+                            <div class="mdc-card-wrapper__text-section demo-card__supporting-text">
+                                <p>Software Engineering for Software as a Service. University of California,
+                                    Berkeley.</p>
+                                <p>Multimedia, Raffles LaSalle Institute, Sydney, Australia.</p>
+                                <p>Computer Science, PUC-SP, São Paulo, Brazil.</p>
+                            </div>
+                            <div class="mdc-card__actions"></div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-4">
+                        <div class="demo-card mdc-card">
+                            <div class="mdc-card__media mdc-card__media--16-9" style="background-image:url(assets/images/profile.png?as=jpg&width=1000); background-size: cover !important;"></div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-
-              <div class="mdc-card-wrapper__text-section">
-                <div class="title mdc-typography--headline4">Education</div>
-                <!-- <div class="card__subhead">a Brazilian, a husband, and a father of two</div> -->
-              </div>
-              <div class="mdc-card-wrapper__text-section">
-                <div class="mdc-typography--subtitle1">
-                  <p>Software Engineering for Software as a Service. University of California, Berkeley.</p>
-                  <p>Multimedia, Raffles LaSalle Institute, Sydney, Australia.</p>
-                  <p>Computer Science, PUC-SP, São Paulo, Brazil.</p>
+            </div>
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell">
+                        <a href="skills.html" class="mdc-button mdc-button--leading">
+                            <span class="mdc-button__ripple"></span>
+                            <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                            <span class="mdc-button__label">Programming skills</span>
+                        </a>
+                    </div>
                 </div>
-              </div>
-              <div class="mdc-card__actions"></div>
             </div>
-            <a href="skills.html" class="mdc-button mdc-button--leading">
-              <span class="mdc-button__ripple"></span>
-              <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
-              <span class="mdc-button__label">Programming skills</span>
-            </a>
-          </div>
-          <div class="mdc-layout-grid__cell--span-4">
-            <div class="mdc-card demo-card">
-              <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(assets/images/profile.png);"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-  </div>
-  <script defer src="index.js" type="module"></script>
+        </main>
+    </div>
+    <script defer src="index.js" type="module"></script>
 </body>

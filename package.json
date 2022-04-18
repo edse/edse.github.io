@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Emerson Estrella personal website",
   "scripts": {
-    "server": "parcel src/index.html src/static.html",
-    "build": "parcel build src/index.html src/static.html",
+    "server": "parcel --no-cache src/index.html src/static.html",
+    "build": "parcel build --no-cache src/index.html src/static.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "targets": {
@@ -25,15 +25,16 @@
     "@material/layout-grid": "^13.0.0",
     "@material/list": "^13.0.0",
     "@material/ripple": "^13.0.0",
+    "@material/tab-bar": "^13.0.0",
     "@material/textfield": "^13.0.0",
     "@material/theme": "^13.0.0",
     "@material/top-app-bar": "^13.0.0",
-    "@material/typography": "^13.0.0",
-    "material-components-web": "^13.0.0"
+    "@material/typography": "^13.0.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.3.2",
     "parcel": "^2.3.2",
+    "posthtml-doctype": "^1.1.1",
     "posthtml-include": "^1.7.2",
     "sass": "^1.49.9",
     "sharp": "^0.29.3"

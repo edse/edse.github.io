@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<include src="src/partials/head.html"></include>
+<include src="src/partials/head.html">{"title": "Programming languages, frameworks, tools..."}</include>
 <body class="mdc-typography">
 
     <!-- Menu -->
-    <include src="src/partials/menu.html">
+    <include src="src/partials/drawer.html">
         {
         "selectedHome": "",
         "selectedAbout": "",
@@ -22,10 +22,18 @@
         <!-- Header -->
         <include src="src/partials/header.html">
             {
-            "title": "Programming languages, frameworks, tools..."
+                "title": "Programming languages, frameworks, tools...",
+                "selectedHome": "",
+                "selectedAbout": "",
+                "selectedSkills": " mdc-tab-indicator--active",
+                "selectedWork": "",
+                "selectedProjects": "",
+                "selectedPhotos": "",
+                "selectedMusic": "",
+                "selectedResume": "",
+                "selectedContact": ""
             }
         </include>
-
         <main class="main-content" id="main-content">
             <div class="mdc-top-app-bar--fixed-adjust"></div>
 
@@ -33,6 +41,12 @@
                 <div class="mdc-layout-grid__inner">
                     <div class="mdc-layout-grid__cell--span-12">
                         <include src="src/partials/skills.html"></include>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell">
                         <a href="work.html" class="mdc-button mdc-button--leading">
                             <span class="mdc-button__ripple"></span>
                             <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>

@@ -1,1 +1,0 @@
-{"mappings":"oeAEkB,IAFlBA,EAAA,SAEsBC,WAAUC,SAASC,cAAc","sources":["src/fab.js"],"sourcesContent":["import {MDCRipple} from '@material/ripple';\n\nconst fabRipple = new MDCRipple(document.querySelector('.mdc-fab'));\n"],"names":["parcelRequire","MDCRipple","document","querySelector"],"version":3,"file":"resume.441cef1d.js.map"}

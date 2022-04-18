@@ -1,77 +1,77 @@
 <!DOCTYPE html>
-<include src="src/partials/head.html"></include>
+<include src="src/partials/head.html">{"title": "Privacy policy"}</include>
+
 <body class="mdc-typography">
 
-  <!-- Menu -->
-  <include src="src/partials/menu.html">
-    {
-      "selectedHome": "",
-      "selectedAbout": " mdc-deprecated-list-item--activated",
-      "selectedSkills": "",
-      "selectedWork": "",
-      "selectedProjects": "",
-      "selectedPhotos": "",
-      "selectedMusic": "",
-      "selectedResume": "",
-      "selectedContact": ""
-    }
-  </include>
-
-  <div class="mdc-drawer-app-content">
-
-    <!-- Header -->
-    <include src="src/partials/header.html">
-      {
-        "title": "Privacy policy"
-      }    
+    <!-- Menu -->
+    <include src="src/partials/drawer.html">
+        {
+        "selectedHome": "",
+        "selectedAbout": " mdc-deprecated-list-item--activated",
+        "selectedSkills": "",
+        "selectedWork": "",
+        "selectedProjects": "",
+        "selectedPhotos": "",
+        "selectedMusic": "",
+        "selectedResume": "",
+        "selectedContact": ""
+        }
     </include>
 
-    <main class="about" id="main-content">
-      <div class="mdc-top-app-bar--fixed-adjust"></div>
+    <div class="mdc-drawer-app-content">
 
-      <!-- Content -->
-      <div class="mdc-layout-grid">
-        <div class="mdc-layout-grid__inner">
-          <div class="mdc-layout-grid__cell--span-4">
-            <div class="mdc-card">
-              <div class="mdc-card-wrapper__text-section">
-                <div class="card__title">Ads</div>
-              </div>
-              <div class="mdc-card-wrapper__text-section">
-                <div class="demo-card__supporting-text">
-                  <p>Third party vendors, including Google, use cookies to serve ads based on a user's prior visits to your website or other websites.</p>
+        <!-- Header -->
+        <include src="src/partials/header.html">{"title": "Privacy policy"}</include>
+
+        <main class="about" id="main-content">
+            <div class="mdc-top-app-bar--fixed-adjust"></div>
+
+            <!-- Content -->
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card">
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="card__title">Ads</div>
+                            </div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="demo-card__supporting-text">
+                                    <p>Third party vendors, including Google, use cookies to serve ads based on a user's
+                                        prior visits to your website or other websites.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card">
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="card__title">Cookies</div>
+                            </div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="demo-card__supporting-text">
+                                    <p>Google's use of advertising cookies enables it and its partners to serve ads to
+                                        your users based on their visit to your sites and/or other sites on the
+                                        Internet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card">
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="card__title">Opt-out</div>
+                            </div>
+                            <div class="mdc-card-wrapper__text-section">
+                                <div class="demo-card__supporting-text">
+                                    <p>Users may opt out of personalized advertising by visiting Ads Settings.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="mdc-layout-grid__cell--span-4">
-              <div class="mdc-card">
-              <div class="mdc-card-wrapper__text-section">
-                <div class="card__title">Cookies</div>
-              </div>
-              <div class="mdc-card-wrapper__text-section">
-                <div class="demo-card__supporting-text">
-                  <p>Google's use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mdc-layout-grid__cell--span-4">
-            <div class="mdc-card">
-              <div class="mdc-card-wrapper__text-section">
-                <div class="card__title">Opt-out</div>
-              </div>
-              <div class="mdc-card-wrapper__text-section">
-                <div class="demo-card__supporting-text">
-                  <p>Users may opt out of personalized advertising by visiting Ads Settings.</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      </div>
     </main>
-  </div>
-  <script defer src="index.js" type="module"></script>
+    </div>
+    <script defer src="index.js" type="module"></script>
 </body>

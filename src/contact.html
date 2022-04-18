@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<include src="src/partials/head.html"></include>
+<include src="src/partials/head.html">{"title": "Getting in touch"}</include>
+
 <body class="mdc-typography">
 
     <!-- Menu -->
-    <include src="src/partials/menu.html">
+    <include src="src/partials/drawer.html">
         {
         "selectedHome": "",
         "selectedAbout": "",
@@ -22,7 +23,16 @@
         <!-- Header -->
         <include src="src/partials/header.html">
             {
-            "title": "Getting in touch"
+            "title": "Getting in touch",
+            "selectedHome": "",
+            "selectedAbout": "",
+            "selectedSkills": "",
+            "selectedWork": "",
+            "selectedProjects": "",
+            "selectedPhotos": "",
+            "selectedMusic": "",
+            "selectedResume": "",
+            "selectedContact": " mdc-tab-indicator--active"
             }
         </include>
 
@@ -32,13 +42,17 @@
             <!-- Content -->
             <div class="mdc-layout-grid">
                 <div class="mdc-layout-grid__inner">
-                    <div class="mdc-layout-grid__cell--span-6">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSekTsol0h9xPobTOEXpdB1vAzgHl9UpCQHkCCqduI-SRLf1zQ/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    <div class="mdc-layout-grid__cell">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSekTsol0h9xPobTOEXpdB1vAzgHl9UpCQHkCCqduI-SRLf1zQ/viewform?embedded=true"
+                            width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-3">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
-                            <a href="https://twitter.com/emersonestrella" target="_blank" class="mdc-card__primary-action">
-                                <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(assets/images/twitter2.png);"></div>
+                            <a href="https://twitter.com/emersonestrella" target="_blank"
+                                class="mdc-card__primary-action">
+                                <div class="mdc-card__media mdc-card__media--16-9"
+                                    style="background-image: url(assets/images/twitter2.png);"></div>
                                 <div class="mdc-card-wrapper__text-section">
                                     <div class="card__title">@emersonestrella</div>
                                     <div class="card__subhead">twitter.com/emersonestrella</div>
@@ -53,9 +67,10 @@
                             </a>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell--span-3">
+                    <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
-                            <a href="https://linkedin.com/in/emersonestrella" target="_blank" class="mdc-card__primary-action">
+                            <a href="https://linkedin.com/in/emersonestrella" target="_blank"
+                                class="mdc-card__primary-action">
                                 <div class="mdc-card__media mdc-card__media--16-9"
                                     style="background-image: url(assets/images/linkedin.png);"></div>
                                 <div class="mdc-card-wrapper__text-section">
@@ -72,20 +87,26 @@
                             </a>
                         </div>
                     </div>
-                    <!-- <div class="mdc-layout-grid__cell--span-3">
+                    <!-- <div class="mdc-layout-grid__cell">
                         <div class="mdc-card">
                             <div class="mdc-card__media mdc-card__media--16-9"
                                 style="background-image: url(assets/images/delete-facebook.jpg);"></div>
                             <div class="mdc-card__ripple"></div>
                         </div>
                     </div> -->
-                    <a href="index.html" class="mdc-button mdc-button--leading">
-                        <span class="mdc-button__ripple"></span>
-                        <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
-                        <span class="mdc-button__label">About me</span>
-                    </a>   
                 </div>
-        </main>
+                <div class="mdc-layout-grid">
+                    <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__cell">
+                            <a href="index.html" class="mdc-button mdc-button--leading">
+                                <span class="mdc-button__ripple"></span>
+                                <i class="material-icons mdc-button__icon" aria-hidden="true">shortcut</i>
+                                <span class="mdc-button__label">About me</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
     </div>
     <script defer src="index.js" type="module"></script>
 </body>
